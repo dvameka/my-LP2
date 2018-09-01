@@ -1,0 +1,26 @@
+
+<form #myForm="ngForm" (ngSubmit)="addAlbum(myForm)">
+
+<div class="container" fxLayout="column">
+    <div class="item1" fxFlex=99%><mat-form-field><input matInput name="albumName" placeholder="Album Title" ngModel required></mat-form-field></div>
+    <div class="item2" fxFlex=99%><mat-form-field><input matInput name="artistName" placeholder="Artiste Name" ngModel required></mat-form-field></div>
+    <div class="container" fxLayout="row">
+    <div>Rating</div>
+    <div class="item3" fxFlex=99%><mat-slider name="rating" min="0" max="10" step="1" value="5"  thumbLabel="thumbLabel" tickInterval="1"></mat-slider></div>
+    </div>
+    <div class="item4" fxFlex=99%><mat-form-field><input matInput name="imageURL" type=url placeholder="Image Link" ngModel></mat-form-field></div>
+ <div class="container" fxLayout="row">
+    <div class="item5" fxFlex=50%>
+        <button type="reset" mat-raised-button color=primary>Clear Fields</button>
+      </div>
+    <div class="item6" fxFlex=50%>
+      <button type="submit" mat-raised-button color=accent [disabled]="myForm.invalid">Add to Collection</button>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+</form>

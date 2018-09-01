@@ -1,0 +1,19 @@
+
+<div fxLayout="column">
+
+  <!--  <div *ngIf="albumList==0"><h3>Start Your Collection</h3></div>
+ -->  {{listUpdated.value}}
+
+
+ <div *ngIf="listUpdated.length == 0">
+    <h3>Your cart is empty</h3>
+  </div>
+  
+  <div fxLayout="row" *ngFor="let i of listUpdated">
+    <div fxFlex=30%>{{ i.album }}</div>    <div fxFlex=20%>{{ i.artist }}</div>
+  </div>
+
+
+  </div>
+
+
