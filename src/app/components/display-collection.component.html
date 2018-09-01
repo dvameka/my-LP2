@@ -9,10 +9,13 @@
     <h3>Your cart is empty</h3>
   </div>
   
-  <div fxLayout="row" *ngFor="let i of listUpdated">
-    <div fxFlex=30%>{{ i.album }}</div>    <div fxFlex=20%>{{ i.artist }}</div>
+  <div class="container" fxLayout="row" fxLayoutAlign="start" *ngFor="let i of listUpdated">
+    <mat-card>
+      <div fxFlex=50% fxLayoutGap=60px><img height=70px src="{{ i.img }}"></div>
+      <div fxFlex=30%>{{ i.album }}</div>
+      <div fxFlex=20%>{{ i.artist }}</div>
+    </mat-card>
   </div>
-
 
   </div>
 

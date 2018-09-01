@@ -22,8 +22,10 @@ export class AppComponent {
   title = 'my-LP2';
 
   myAlbumList: fullAlbumList[] = [
-    { album: "Best of Michael Jackson", artist: "Michael", rating: 10, img: "http://" },
-    { album: "Best of 80s", artist: "Rick Astley", rating: 7, img: "http://" }
+    { album: "The Essential Michael Jackson", artist: "Michael Jackson", rating: 8, img: "../../assets/MJ_bad.jpg" },
+    { album: "Bad", artist: "Michael Jackson", rating: 10, img: "../../assets/MJessential.jpg" }
+    { album: "Aretha Franklin", artist: "Aretha Franklin", rating: 9, img: "../../assets/arethafranklin.jpg" }
+
   ];
 
 @Input()
